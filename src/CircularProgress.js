@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { View, ViewPropTypes } from 'react-native';
-import { Svg, Path, G } from 'react-native-svg';
+import { Svg } from "expo";
+
+const Path = Svg.Path;
+const G = Svg.G;
 
 export default class CircularProgress extends React.PureComponent {
   polarToCartesian(centerX, centerY, radius, angleInDegrees) {
